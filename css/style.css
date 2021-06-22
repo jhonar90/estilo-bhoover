@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 66.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+body{
+    background: rgb(231, 231, 231);
+}
+/*estilos para las cajas*/
+
+.container-all{
+    max-width: 100rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 25rem;
+    height: 18rem;
+    padding: 2rem;
+    margin: 2rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.box:hover{
+    transform: translate(.5rem, -.5rem);
+    box-shadow: -1rem 1rem 2rem -1rem rgba(0, 0, 0, 0.5); /*sombra casi perfecta*/
+}
+
+.box .icon,
+.box h4,
+.box p{
+ position: relative;  
+ z-index: 1; 
+ transition: all 200ms;
+}
+
+
+.box .icon{
+    font-size: 4rem;
+    color: black;
+    transform: translateY(3rem);
+}
+
+.box:hover .icon{
+    color: white;
+    font-size: 3rem;
+    transform: translateY(0);
+}
+
+.box h4,
+.box p{
+    margin-top: 1rem;
+}
+
+.box h4{
+    font-size: 3rem;  
+    transform: translateY(3rem);
+}
+
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+
+.box p{
+    font-size: 1.04rem;
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+
+.box .background-hover{
+    width: 10rem;
+    height: 10rem;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -100px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.box:hover .background-hover{
+    width: 40rem;
+    height: 40rem;
+    top: -70px;
+    height: -70px;
+}
+
+/*cambiar color de las cajas*/
+
+/*box2*/
+.box2 .background-hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,105,0.9023984593837535) 35%, rgba(0,212,255,1) 100%);
+}
+
+/*box3*/
+.box3 .background-hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(189,72,95,1) 100%);
+}
+
+/*box4*/
+.box4 .background-hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(72,155,189,0.7875525210084033) 100%);
+}
+
+/*box5*/
+.box5 .background-hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(208,107,40,0.7875525210084033) 100%);
+}
+
+/*box6*/
+.box6 .background-hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(198,115,101,0.8183648459383753) 100%);
+}
